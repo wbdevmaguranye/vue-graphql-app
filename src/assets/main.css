@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    63.36deg,
+    #472f9f 0%,
+    #0070e4 30.98%,
+    #009fdf 56.97%,
+    #00c592 77.96%,
+    #4ee000 99.94%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+.todo-form,
+.todo-table {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  position: relative;
+  width: clamp(450px, 50vw, 650px);
+}
+
+.todo-form input {
+  font-size: 25px;
+  line-height: 29px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.todo-form button {
+  font-size: 25px;
+  line-height: 29px;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #5c5c5c;
+  color: #eaeaea;
+  position: absolute;
+  right: 1em;
+  margin-top: 7px;
+}
+.todo-table {
+  margin-top: 0em;
+  border-radius: 0px 10px 10px 10px;
+}
+.todo-table h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #343434;
+}
+
+.todo-table small {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #404040;
+}
+.todo-table table {
+  border-spacing: 0px;
+  margin-top: 1em;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.todo-table thead tr {
+  background-color: #3d39aa;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  height: 40px;
+}
+.todo-table thead tr th:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+.todo-table thead tr th:last-child {
+  border-radius: 0px 10px 0px 0px;
+}
+
+.todo-table tbody tr {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  height: 40px;
+}
+.todo-table tbody tr td:first-child {
+  text-align: center;
+  padding: 5px;
+}
+.todo-table tbody tr td:last-child {
+  text-align: center;
+  padding: 5px;
+}
+.todo-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+.todo-table tbody tr:last-child td:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+.todo-table tbody tr:last-child td:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+.todo-table tbody tr.complete {
+  background-color: #b1e793;
+  text-decoration: line-through;
+}
